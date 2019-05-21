@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">time4child</string>
+    <string name="txt_first_in_child">Схоже ви увійшли вперше
+        \nВведіть <b>номер телефону особи</b> що нагадує про <b>важливі події</b></string>
+    <string name="txt_confirm">Підтвердити</string>
+    <string name="txt_ip_error">Схоже щось не так з вашим батьківським IP
+        \nБудь ласка, перевірте IP на батьківському пристрої та введіть тут</string>
+
+    <string name="txt_empty">Порожньо</string>
+    <string name="txt_choose_sim">Виберіть SIM-карту</string>
+
+    <string name="slide">Проведіть для підтвердження</string>
+</resources>

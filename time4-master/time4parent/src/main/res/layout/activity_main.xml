@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.zamkovenko.time4parent.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_days_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_month">
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="S"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="M"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="T"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="W"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="T"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/day6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="F"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/day7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="S"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_section"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round"
+            android:contentDescription="today"
+            android:src="@drawable/ic_target"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3" />
+
+        <ImageButton
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_round"
+            android:src="@drawable/ic_list"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="440dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_style"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="add"
+            android:src="@drawable/ic_add"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="431dp" />
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_edit"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="443dp" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/txt_calendar"
+        android:src="@android:drawable/ic_menu_today"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="9"
+        android:gravity="center_vertical"
+        android:text="@string/txt_november"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="November" />
+
+    <ListView
+        android:id="@+id/tasks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="3dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_days"
+        tools:listitem="@layout/task_list_item" />
+
+    <LinearLayout
+        android:id="@+id/layout_days"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_days_name">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="20"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="21"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_cal_style"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="22"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="23"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="24"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="25"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:text="@string/txt_tasks"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat"
+        app:layout_constraintBottom_toTopOf="@+id/right_section"
+        app:layout_constraintEnd_toEndOf="@+id/right_section"
+        app:layout_constraintStart_toStartOf="@+id/right_section" />
+
+</android.support.constraint.ConstraintLayout>

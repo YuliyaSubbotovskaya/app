@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/time4-master.iml" filepath="$PROJECT_DIR$/time4-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/time4child/time4child.iml" filepath="$PROJECT_DIR$/time4child/time4child.iml" />
+      <module fileurl="file://$PROJECT_DIR$/time4parent/time4parent.iml" filepath="$PROJECT_DIR$/time4parent/time4parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+    </modules>
+  </component>
+</project>

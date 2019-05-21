@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">time4parent</string>
+    <string name="txt_calendar">Календар</string>
+    <string name="txt_november">Листопад</string>
+
+    <string name="txt_date">Дата</string>
+    <string name="txt_time">Час</string>
+    <string name="txt_title">Назва</string>
+    <string name="txt_accept">Підтвердити</string>
+    <string name="txt_tasks">Завдання</string>
+    <string name="txt_your_ip">Ваш IP</string>
+    <string name="txt_vibration">Вібрація</string>
+    <string name="txt_blinking">Блимання</string>
+    <string name="txt_cancel">Скасувати</string>
+
+    <string name="txt_choose_sim">Виберіть SIM-карту</string>
+
+    <string name="txt_first_in_child">Схоже ви увійшли вперше
+        \nВведіть <b>номер телефону особи</b>, що потребує про <b>нагадвання</b></string>
+    <string name="txt_empty">Порожньо</string>
+
+    <string name="add_task">Додати завдання</string>
+</resources>
