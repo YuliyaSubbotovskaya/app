@@ -75,6 +75,7 @@ public class SmsProcessorService extends Service {
 
         Intent notificationReceiverIntent = new Intent(this, NotificationReceiver.class);
         notificationReceiverIntent.putExtra(ConfirmActivity.PARAM_NOTIFICATION_ID, message.getId());
+        notificationReceiverIntent.putExtra(ConfirmActivity.PARAM_NOTIFICATION_TITLE, message.getTitle());
 
         long triggerAtMillis = message.getOnDate().getTime();
         if (triggerAtMillis < System.currentTimeMillis()) {

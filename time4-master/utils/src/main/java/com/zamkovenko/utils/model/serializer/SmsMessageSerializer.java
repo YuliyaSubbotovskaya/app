@@ -40,6 +40,9 @@ public class SmsMessageSerializer implements MessageSerializer<String> {
         stringMessage.append(message.getMessageState() == MessageState.DONE ? 1 : 0);
         stringMessage.append(".");
 
+        stringMessage.append(message.getTitle());
+        stringMessage.append(".");
+
         return stringMessage.toString();
     }
 
@@ -59,6 +62,7 @@ public class SmsMessageSerializer implements MessageSerializer<String> {
                 .setIsVibro(parts[INDICES.IS_VIBRO].equals("1"))
                 .setIsBlinking(parts[INDICES.IS_BLINKING].equals("1"))
                 .setMessageState(parts[INDICES.IS_DONE].equals("1") ? MessageState.DONE : MessageState.NOT_DONE)
+                .setTitle(String.valueOf(parts[INDICES.TITLE]))
                 .build();
     }
 }
@@ -72,6 +76,7 @@ interface INDICES {
     int IS_VIBRO = ID + 1;
     int IS_BLINKING = IS_VIBRO + 1;
     int IS_DONE = IS_BLINKING + 1;
+    int TITLE = IS_DONE + 1;
 
     int COUNT = IS_BLINKING + 1;
 }

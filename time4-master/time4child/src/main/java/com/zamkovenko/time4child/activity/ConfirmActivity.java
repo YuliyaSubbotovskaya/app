@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zamkovenko.time4child.R;
@@ -34,14 +35,20 @@ import static android.content.Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS;
 public class ConfirmActivity extends AppCompatActivity {
 
     public static String PARAM_NOTIFICATION_ID = "notification_id";
+    public static String PARAM_NOTIFICATION_TITLE = "notification_title";
 
     private short messageId;
+
+    private String messageTitle;
 
     private Ringtone m_ringtone;
 
     private SeekBar slider;
     private boolean sliderClicked = true;
     private int firstI = -1;
+
+    private TextView txt_messageTitle;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,6 +60,8 @@ public class ConfirmActivity extends AppCompatActivity {
             Log.d("ConfirmActivity", "Message id == -1");
             finish();
         }
+
+        messageTitle = getIntent().getExtras().getString(PARAM_NOTIFICATION_TITLE, "");
 
         MySwipeButton mySwipeButton = new MySwipeButton(ConfirmActivity.this,
                 null, null);
@@ -73,6 +82,14 @@ public class ConfirmActivity extends AppCompatActivity {
         Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
         m_ringtone = RingtoneManager.getRingtone(ConfirmActivity.this, notification);
         m_ringtone.play();
+
+        //TODO: Make text field
+
+        // txt_messageTitle = findViewById(R.id.txt_message_title);
+        // txt_messageTitle.setText(messageTitle);
+
+        //TODO: Uncomment this after adding txt field
+
     }
 
     @Override

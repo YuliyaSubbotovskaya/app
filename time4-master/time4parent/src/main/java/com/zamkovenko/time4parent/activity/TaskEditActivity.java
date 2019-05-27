@@ -65,22 +65,22 @@ public class TaskEditActivity extends AppCompatActivity implements TimePickerDia
         calendar = new GregorianCalendar(locale);
         calendar.setTime(Calendar.getInstance(locale).getTime());
 
-        m_switchIsBlink = (Switch) findViewById(R.id.switch_blinking);
-        m_switchIsVibration = (Switch) findViewById(R.id.switch_vibration);
+        m_switchIsBlink = findViewById(R.id.switch_blinking);
+        m_switchIsVibration = findViewById(R.id.switch_vibration);
 
-        Button btnSetDate = (Button) findViewById(R.id.btn_setDate);
-        Button btnSetTime = (Button) findViewById(R.id.btn_setTime);
-        Button btnAccept = (Button) findViewById(R.id.btn_accept);
+        Button btnSetDate = findViewById(R.id.btn_setDate);
+        Button btnSetTime = findViewById(R.id.btn_setTime);
+        Button btnAccept = findViewById(R.id.btn_accept);
         if(Build.VERSION.SDK_INT < 21){
             btnAccept.setBackgroundResource(R.drawable.btn_style);
         }else {
             btnAccept.setBackgroundResource(R.drawable.btn_ripple);
         }
 
-        txtTitle = (TextView) findViewById(R.id.txt_title);
+        txtTitle = findViewById(R.id.txt_title);
 
-        txtCurrentTime = (TextView) findViewById(R.id.txt_currentTime);
-        txtCurrentDate = (TextView) findViewById(R.id.txt_currentDate);
+        txtCurrentTime = findViewById(R.id.txt_currentTime);
+        txtCurrentDate = findViewById(R.id.txt_currentDate);
 
         btnSetDate.setOnClickListener(new View.OnClickListener() {
             @Override
