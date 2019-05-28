@@ -85,8 +85,8 @@ public class ConfirmActivity extends AppCompatActivity {
 
         //TODO: Make text field
 
-        // txt_messageTitle = findViewById(R.id.txt_message_title);
-        // txt_messageTitle.setText(messageTitle);
+        txt_messageTitle = findViewById(R.id.txt_message_title);
+        txt_messageTitle.setText(messageTitle);
 
         //TODO: Uncomment this after adding txt field
 
